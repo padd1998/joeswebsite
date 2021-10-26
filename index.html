@@ -1,60 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div id="top_left_corner">
-  <img src="topleft.jpg" class="top_left"/>
-</div>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" type = "text/css" href = "index.css">
+    </head>
+  <body>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+          <a class="navbar-brand" href=" "></a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  
+                  <li class="nav-item active">
+                      <a class="nav-link" href="boot.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="previouswork.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact/Pricing</a>
+                </li>
+                  
+              </ul>
+              
+          </div>
+      </nav>
 
+      <!-- <img src="flickandjoe.jpg" width="300px"> -->
+  <br>
+      <p>
+        Welcome to Greenshank Automotive. <br> 
+        I am a vehicle performance and appearance technician, based in Lancaster. <br>
+        Unit 8 Forestgate <br> 
+        White Lund Industrial Estate <br> Morecambe <br> LA3 3PD 
+        </p>
+        
+        <h1>Our location</h1>
 
-    <div class="container">
-        <img src = "logo.jpg" length = "100" width="150">
-        <a href = "index.html" class="box box1">Homepage</a>
-        <a href = "previouswork.html" class="box box2">Previous work</a>
-        <a href = "Contact.html" class="box box3">Contact and prices</a>
-    </div>
+        <div id="googleMap" style="width:40%;height:400px;left:3%;"></div>
+        
+        <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(54.0586 , -2.8355),
+          zoom:17,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        // var marker = new google.maps.Marker({position:54.0586 , -2.8355});
+        
+        // marker.myMap(map);
+        </script>
+        
+        
 
-</head>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzycNFoewlTYc7Vl3j32hoHR7YqHV_saI&callback=myMap"></script>
+      
+        
+        
+        
 
-<body>  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<p>
-Welcome to Greenshank Automotive. <br> 
-I am a vehicle performance and appearance technician. <br> 
-Based in Lancaster. <br>
-Unit 8 Forestgate <br> 
-White Lund Industrial Estate <br> Morecambe <br> LA33PD. 
-</p>
-
-<h1>Our location</h1>
-
-<div id="googleMap" style="width:40%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(54.0586 , -2.8355),
-  zoom:17,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position: myCenter});
-
-marker.setMap(map);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzycNFoewlTYc7Vl3j32hoHR7YqHV_saI&callback=myMap"></script>
-
-
-</body>
-
-<div id="bottom_right_corner">
-  <img src="bottom_right.jpg" class="bottom_right"/>
-</div>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
